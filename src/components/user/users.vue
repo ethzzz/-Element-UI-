@@ -408,9 +408,12 @@ export default {
       if (!this.selectRoleId) {
         return this.$message.error("请选择需要分配的角色");
       }
-      const {  data: res,} = await this.$http.put(`users/${this.userInfo.id}/role`, {
-        rid: this.selectRoleId,
-      });
+      const { data: res } = await this.$http.put(
+        `users/${this.userInfo.id}/role`,
+        {
+          rid: this.selectRoleId,
+        }
+      );
       // console.log(res);
       if (res.meta.status !== 200) {
         return this.$message.error("更新角色失败!");

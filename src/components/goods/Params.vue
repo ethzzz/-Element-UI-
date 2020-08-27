@@ -279,7 +279,7 @@ export default {
         this.selectedCateKeys = [];
         this.manyTableData=[];
         this.onlyTableData=[];
-        return this.$message.error("您没有选择三级商品！");
+        return this.$message.error("您没有选择三级商品分类！");
       }
 
       //   console.log(this.selectedCateKeys);

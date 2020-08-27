@@ -259,7 +259,7 @@ export default {
       }
       this.userList = res.data.users;
       this.total = res.data.total;
-      console.log(res);
+      // console.log(res);
     },
     // 监听pagesize改变的事件
     handleSizeChange(newSize) {

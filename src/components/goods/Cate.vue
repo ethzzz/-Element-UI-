@@ -229,9 +229,9 @@ export default {
       if (res.meta.status !== 200) {
         return this.$message.error("获取商品列表数据失败!");
       }
-      // 把获取的商品列表赋值到 cateList中
+      // 把获取的商品分类列表赋值到 cateList中
       this.cateList = res.data.result;
-      //   为商品总数赋值
+      //   为商品分类总数赋值
       this.total = res.data.total;
       //   console.log(this.cateList)
     },
